@@ -13,6 +13,9 @@
     background-size: cover;
     background-position: bottom;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -25,13 +28,13 @@ p{
 
 .form-container{
 
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     background-color: rgb(0,0,0,0.6);
     backdrop-filter: blur(3px);
-    max-width: 370px;
+    width: 370px;
     height: 500px;
     padding: 10px;
     border-radius: 10px;
@@ -81,4 +84,25 @@ p{
     align-items: center;
     gap: 10px;
     margin-top: 15px;
+}
+
+
+
+@media screen and (max-width:576px) {
+
+    .form-container{
+        margin: 10px;
+    }
+    h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    h3{
+        font-size: 16px;
+    }
+    
+    p{
+        font-size: 14px;
+        font-weight: 600;
+    }
 }
